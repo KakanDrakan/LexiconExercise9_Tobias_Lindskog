@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="body">
+    <div class="wrapper">
+        <header class="header">
+            <h1>Bish-Bosh 2.0</h1>
+        </header>
+        <div class="container col-10 col-lg-7 col-md-9 mt-4 text-center">
+            <h2 class="text-center">What is Bish-Bosh?</h2>
+            <p class="text-center">Bish-Bosh is a game where you count from 1 to a specified number. Two numbers are
+                given. If the current number is divisible by the first number you say "Bosh" instead of that number. If
+                it's divisible by the second you say "Bosh". When the number is divisible by both you say
+                "Bish-Bosh"."Bosh".</p>
+            <p class="text-center">For example, if you choose 3 and 5, the output would be:</p>
+            <p class="text-center">1, 2, Bish, 4, Bosh, Bish, 7, 8, Bish, Bosh, 11, Bish...</p>
+            <p class="text-center">This website was made as an exercise from Lexicon. It lists numbers as if it was
+                playing Bish-Bosh.</p>
+            <p class="text-center">Try it out below!</p>
+            <div class="mb-3" style="width: 300px; margin: auto;">
+                <input type="number" id="bishNumber" class="form-control mb-1" placeholder="Enter Bish-number">
+                <input type="number" id="boshNumber" class="form-control mb-1" placeholder="Enter Bosh-number">
+                <input type="number" id="count" class="form-control mb-2" placeholder="Enter number count">
+                <button id="btn">Submit</button>
+            </div>
+        </div>
+        <div id="output" class="container text-center"></div>
+    </div>
+    <footer class="footer">
+        <p>&copy;2025 Tobias Lindskog</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
